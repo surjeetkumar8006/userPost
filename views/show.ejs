@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .post-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        .post-details {
+            margin-top: 20px;
+        }
+
+        .post-details h1 {
+            margin-bottom: 10px;
+        }
+
+        .post-details p {
+            margin: 10px 0;
+        }
+
+        .post-details h3 {
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .post-details h4 {
+            margin-top: 5px;
+            color: #666666;
+        }
+
+        /* Ensure images are displayed properly */
+        .post-details img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-card">
+        <div class="post-details">
+            <h1>Here are Your Post Details</h1>
+            <p><strong>Post Id:</strong> <%= post.id %></p>
+            <h3>Username: <strong>@<%= post.username %></strong></h3>
+            <h4>Content: <%= post.content %></h4>
+           
+        </div>
+    </div>
+</body>
+</html>
